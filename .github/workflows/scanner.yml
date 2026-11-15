@@ -43,7 +43,7 @@ jobs:
           HTF: ${{ vars.HTF || '1d' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python private/stochrsi_xmark_scanner.py
+        run: python private/s_xmark_scanner.py
 
   scanner-b:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '37 1,7,13,19 * * *' }}
@@ -78,4 +78,4 @@ jobs:
           HTF: ${{ vars.HTF || '1d' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python private/stochrsi_xmark_scanner.py
+        run: python private/s_xmark_scanner.py
