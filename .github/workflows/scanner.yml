@@ -23,7 +23,7 @@ jobs:
       - name: Get scanner code (private repo)
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/xmark-sync-private
+          repository: Bavajann2458/xmark-sync-private
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private
           persist-credentials: false
@@ -58,7 +58,7 @@ jobs:
       - name: Get scanner code (private repo)
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/xmark-sync-private
+          repository: Bavajann2458/xmark-sync-private
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private
           persist-credentials: false
